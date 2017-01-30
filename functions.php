@@ -1,18 +1,21 @@
 <?php
 /**
- * Bulmapress functions and definitions
+ * Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 
+/**
+ * Require the self-instantiating Autoloader class that will
+ * autoload anything in the `bluegreen` dir.
+ *
+ * Every class in the `bluegreen` dir should be namespaced with `Bluegreen`.
+ */
+require_once( get_template_directory() . '/class-bluegreen-autoloader.php' );
 
-require get_template_directory() . '/functions/bulmapress_navwalker.php';
-require get_template_directory() . '/functions/bulmapress_helpers.php';
-require get_template_directory() . '/functions/bulmapress_custom_query.php';
-
-if ( ! function_exists( 'bulmapress_setup' ) ) :
+if ( ! function_exists( 'bluegreen_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -20,20 +23,19 @@ if ( ! function_exists( 'bulmapress_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function bulmapress_setup() {
-	require get_template_directory() . '/functions/base.php';
-	require get_template_directory() . '/functions/post-thumbnails.php';
-	require get_template_directory() . '/functions/navigation.php';
-	require get_template_directory() . '/functions/content.php';
-	require get_template_directory() . '/functions/pagination.php';
-	require get_template_directory() . '/functions/widgets.php';
-	require get_template_directory() . '/functions/search.php';
-	require get_template_directory() . '/functions/scripts-styles.php';
+function bluegreen_setup() {
+	// instantiate the base class that will load everything that needs to run on setup.
+	new Bluegreen\Base();
+
+	require get_template_directory() . '/bluegreen/pagination.php';
+	require get_template_directory() . '/bluegreen/widgets.php';
+	require get_template_directory() . '/bluegreen/search.php';
+	require get_template_directory() . '/bluegreen/scripts-styles.php';
 }
 endif;
-add_action( 'after_setup_theme', 'bulmapress_setup' );
+add_action( 'after_setup_theme', 'bluegreen_setup' );
 
-require get_template_directory() . '/functions/template-tags.php';
-require get_template_directory() . '/functions/extras.php';
-require get_template_directory() . '/functions/customizer.php';
-require get_template_directory() . '/functions/jetpack.php';
+require get_template_directory() . '/bluegreen/template-tags.php';
+require get_template_directory() . '/bluegreen/extras.php';
+require get_template_directory() . '/bluegreen/customizer.php';
+require get_template_directory() . '/bluegreen/jetpack.php';

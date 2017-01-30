@@ -4,14 +4,14 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('wrapper'); ?>>
 	<div class="container content">
 		<header class="entry-header">
-			<?php bulmapress_the_title('is-3'); ?>
+			<?php Bluegreen\Util::the_title('is-3'); ?>
 			<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php bulmapress_posted_on(); ?>

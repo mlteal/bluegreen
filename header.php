@@ -4,9 +4,9 @@
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * @link    https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 ?>
 
@@ -20,21 +20,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="page" class="site">
-		<?php bulmapress_skip_link_screen_reader_text(); ?>
-		<header id="header" class="hero">
-			<div class="hero-head">
-				<div class="container">
-					<nav id="site-navigation" class="nav main-navigation" role="navigation">
-						<div class="nav-left">
-							<?php bulmapress_home_link('nav-item is-brand'); ?>
-							<?php bulmapress_blog_description('nav-item is-muted'); ?>
-						</div>
-						<?php bulmapress_menu_toggle(); ?>
-						<?php bulmapress_navigation(); ?>
-					</nav><!-- #site-navigation -->
-				</div><!-- .container -->
-			</div><!-- .hero-head -->
-		</header><!-- .hero -->
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="header" class="hero">
+		<div class="hero-head">
+			<div class="container">
+				<nav id="site-navigation" class="nav main-navigation" role="navigation">
+					<div class="nav-left">
+						<a href="<?php echo home_url( '/' ); ?>" class="nav-item is-brand" rel="home">
+							<?php echo get_bloginfo( 'name' ); ?>
+						</a>
+					</div>
+					<button id="menu-toggle" class="button is-clear menu-toggle"
+							aria-controls="primary-menu" aria-expanded="false">
+						<span id="nav-toggle" class="nav-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+					<?php Bluegreen\Nav::print_prinary_nav(); ?>
+				</nav><!-- #site-navigation -->
+			</div><!-- .container -->
+		</div><!-- .hero-head -->
+	</header><!-- .hero -->
 
-		<div id="content" class="site-content">
+	<div id="content" class="site-content">

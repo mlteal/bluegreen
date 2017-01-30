@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 
 get_header(); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php the_post_navigation();?>
 				</div>
 			</div>
-			<?php bulmapress_get_comments(); ?>
+			<?php Bluegreen\Util::the_comments(); ?>
 		<?php endwhile; ?>
 	</main><!-- #main -->
 </div><!-- #primary -->

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 ?>
 
@@ -16,7 +16,9 @@
 	<div class="container">
 		<div class="hero-body has-text-centered">
 			<div class="site-info">
-				<?php bulmapress_copyright_link(); ?>
+				<p class="copyright-link">
+					&copy; 2014 - <?php echo date( 'Y' ); ?> <a href="https://github.com/mlteal">mlteal</a>
+				</p>
 			</div><!-- .site-info -->
 		</div>
 	</div><!-- .container -->

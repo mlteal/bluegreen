@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 
 get_header(); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'template-parts/content' ); ?>
-			<?php bulmapress_get_comments(); ?>
+			<?php Bluegreen\Util::the_comments(); ?>
 		<?php endwhile; ?>
 	</main><!-- #main -->
 </div><!-- #primary -->

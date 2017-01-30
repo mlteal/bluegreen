@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 ?>
 
@@ -24,9 +24,9 @@
 		<div class="media">
 			<header class="media-content">
 				<?php if ( is_single() ) : ?>
-					<?php bulmapress_the_title('is-2', false); ?>
+					<?php Bluegreen\Util::the_title('is-2', false); ?>
 				<?php else : ?>
-					<?php bulmapress_the_title('is-3'); ?>
+					<?php Bluegreen\Util::the_title('is-3'); ?>
 				<?php endif; ?>
 
 				<?php if ( 'post' === get_post_type() ) : ?>

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Bulmapress
+ * @package Bluegreen
  */
 ?>
 
@@ -12,11 +12,11 @@
 	<div class="container">
 		<header class="content">
 			<?php if ( is_single() ) : ?>
-				<?php bulmapress_the_title('is-1', FALSE); ?>
+				<?php Bluegreen\Util::the_title('is-1', FALSE); ?>
 			<?php elseif ( 'page' === get_post_type() ) : ?>
-				<?php bulmapress_the_title('is-2', FALSE); ?>
+				<?php Bluegreen\Util::the_title('is-2', FALSE); ?>
 			<?php else : ?>
-				<?php bulmapress_the_title('is-2'); ?>
+				<?php Bluegreen\Util::the_title('is-2'); ?>
 			<?php endif; ?>
 			<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="subtitle is-6">

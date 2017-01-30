@@ -23,7 +23,7 @@
 			<?php endwhile; ?>
 		</div>
 		<?php 
-		bulmapress_custom_query(array(
+		Bluegreen\Util::custom_query(array(
 			'post_type' => 'post',
 			'post_class'	=> 'posts',
 			'section_title' => 'Recent Posts',
@@ -32,7 +32,7 @@
 			'section_button_text' => 'See all Posts'
 			)
 		);
-		bulmapress_custom_query(array(
+		Bluegreen\Util::custom_query(array(
 			'post_type' => 'page',
 			'post_class'	=> 'pages',
 			'section_title' => 'Recent Pages',
