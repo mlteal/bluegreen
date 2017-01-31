@@ -29,7 +29,7 @@ endif;
 		if ( have_comments() ) : ?>
 		<div class="content">
 			<div class="header">
-				<h2 class="title is-3"><?php esc_html_e('Comments', 'bulmapress'); ?></h2>
+				<h2 class="title is-3"><?php esc_html_e('Comments', 'bluegreen'); ?></h2>
 				<p class="subtitle">
 			<?php printf( // WPCS: XSS OK.
 				esc_html( _nx( 
@@ -37,7 +37,7 @@ endif;
 					'%1$s thoughts on &ldquo;%2$s&rdquo;', 
 					get_comments_number(), 
 					'comments title', 
-					'bulmapress' 
+					'bluegreen'
 					) ),
 				number_format_i18n( get_comments_number() ),
 				'<span>' . get_the_title() . '</span>'
@@ -47,10 +47,10 @@ endif;
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 			<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-				<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'bulmapress' ); ?></h2>
+				<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'bluegreen' ); ?></h2>
 				<div class="nav-links level">
-					<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'bulmapress' ) ); ?></div>
-					<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'bulmapress' ) ); ?></div>
+					<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'bluegreen' ) ); ?></div>
+					<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'bluegreen' ) ); ?></div>
 				</div><!-- .nav-links -->
 			</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
@@ -67,10 +67,10 @@ endif;
 
 			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 				<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-					<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'bulmapress' ); ?></h2>
+					<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'bluegreen' ); ?></h2>
 					<div class="nav-links level">
-						<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'bulmapress' ) ); ?></div>
-						<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'bulmapress' ) ); ?></div>
+						<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'bluegreen' ) ); ?></div>
+						<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'bluegreen' ) ); ?></div>
 					</div><!-- .nav-links -->
 				</nav><!-- #comment-nav-below -->
 				<?php
@@ -85,7 +85,7 @@ endif;
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 		<div class="content">
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'bulmapress' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'bluegreen' ); ?></p>
 		</div>
 		<?php
 		endif;

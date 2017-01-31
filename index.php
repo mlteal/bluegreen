@@ -29,7 +29,7 @@
 			</div>
 			<div class="section pagination">
 				<div class="container">
-					<?php the_posts_pagination(); ?>
+					<?php Bluegreen\Pagination::print_pagination(); ?>
 				</div>
 			</div>
 		<?php else : ?>

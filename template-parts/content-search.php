@@ -14,7 +14,7 @@
 			<?php Bluegreen\Util::the_title('is-3'); ?>
 			<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php bulmapress_posted_on(); ?>
+					<?php Bluegreen\Template_Tags::posted_on(); ?>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->
@@ -22,7 +22,7 @@
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 		<footer class="entry-footer">
-			<?php bulmapress_entry_footer(); ?>
+			<?php Bluegreen\Template_Tags::entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->

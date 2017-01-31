@@ -20,7 +20,7 @@
 			<?php endif; ?>
 			<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="subtitle is-6">
-					<?php bulmapress_posted_on(); ?>
+					<?php Bluegreen\Template_Tags::posted_on(); ?>
 				</div><!-- .entry-meta -->
 			<?php endif; ?>
 		</header><!-- .entry-header -->
@@ -29,7 +29,7 @@
 			<?php the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses(
-					__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bulmapress' ),
+					__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bluegreen' ),
 					array(
 						'span' => array(
 							'class' => array()
@@ -41,14 +41,14 @@
 			);
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bulmapress' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bluegreen' ),
 				'after'  => '</div>',
 				) );
 				?>
 			</div><!-- .entry-content -->
 
 			<footer class="content entry-footer">
-				<?php bulmapress_entry_footer(); ?>
+				<?php Bluegreen\Template_Tags::entry_footer(); ?>
 			</footer><!-- .entry-footer -->
 		</div>
 	</article><!-- #post-## -->

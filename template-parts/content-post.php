@@ -31,7 +31,7 @@
 
 				<?php if ( 'post' === get_post_type() ) : ?>
 					<div class="subtitle is-6">
-						<?php bulmapress_posted_on(); ?>
+						<?php Bluegreen\Template_Tags::posted_on(); ?>
 					</div><!-- .entry-meta -->
 				<?php endif; ?>
 			</header><!-- .entry-header -->
@@ -40,12 +40,12 @@
 		<?php if ( is_single() ) : ?>
 			<?php the_content( sprintf(
 				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bulmapress' ), array( 'span' => array( 'class' => array() ) ) ),
+				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bluegreen' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bulmapress' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bluegreen' ),
 				'after'  => '</div>',
 				) );
 				?>
@@ -53,7 +53,7 @@
 			<?php the_excerpt(); ?>
 		<?php endif; ?>
 		<div class="content entry-footer">
-			<small><?php bulmapress_entry_footer(); ?></small>
+			<small><?php Bluegreen\Template_Tags::entry_footer(); ?></small>
 		</div><!-- .entry-footer -->
 	</div><!-- .entry-content -->
 </div>

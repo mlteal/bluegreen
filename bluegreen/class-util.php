@@ -60,12 +60,12 @@ class Util {
 				break;
 		}
 		if ( $post_class == '' ) {
-			$bulmapress_post_class = $post_type;
+			$bluegreen_post_class = $post_type;
 		} else {
-			$bulmapress_post_class = $post_class;
+			$bluegreen_post_class = $post_class;
 		}
 
-		$output = '<div class="' . $bulmapress_post_class . '">';
+		$output = '<div class="' . $bluegreen_post_class . '">';
 		if ( $the_query->have_posts() ) {
 			$output .= '<div class="section">';
 			$output .= '<div class="container">';

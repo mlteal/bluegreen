@@ -18,24 +18,26 @@ class Base {
 	 * Base constructor.
 	 */
 	function __construct() {
+		/**
+		 * Sets up theme defaults and registers support for various WordPress features.
+		 *
+		 * Note that this function is hooked into the after_setup_theme hook, which
+		 * runs before the init hook. The init hook is too late for some features, such
+		 * as indicating support for post thumbnails.
+		 */
 		self::init();
 		new Nav();
 		new Thumbnails();
 		new Content();
+		new Scripts();
+		new Widgets();
+		new Search();
 	}
 
 	/**
 	 * Run any functions needed on theme initialization
 	 */
 	static function init() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Bluegreen, use a find and replace
-		 * to change 'bulmapress' to the name of your theme in all the template files.
-		 */
-		load_theme_textdomain( 'bulmapress', get_template_directory() . '/languages' );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 

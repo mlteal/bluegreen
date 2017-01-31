@@ -27,9 +27,11 @@
 			<div class="container">
 				<nav id="site-navigation" class="nav main-navigation" role="navigation">
 					<div class="nav-left">
-						<a href="<?php echo home_url( '/' ); ?>" class="nav-item is-brand" rel="home">
-							<?php echo get_bloginfo( 'name' ); ?>
-						</a>
+						<span class="site-title">
+							<a href="<?php echo home_url( '/' ); ?>" class="nav-item is-brand" rel="home">
+								<?php echo get_bloginfo( 'name' ); ?>
+							</a>
+						</span>
 					</div>
 					<button id="menu-toggle" class="button is-clear menu-toggle"
 							aria-controls="primary-menu" aria-expanded="false">

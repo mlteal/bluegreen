@@ -14,7 +14,7 @@ get_header(); ?>
 			<div class="container">
 				<header class="page-header wrapper">
 					<h1 class="title is-3 page-title">
-						<?php printf( esc_html__( 'Search Results for: %s', 'bulmapress' ), '<span>' . get_search_query() . '</span>' ); ?>
+						<?php printf( esc_html__( 'Search Results for: %s', 'bluegreen' ), '<span>' . get_search_query() . '</span>' ); ?>
 					</h1>
 				</header><!-- .page-header -->
 				<?php while ( have_posts() ) : the_post(); ?>

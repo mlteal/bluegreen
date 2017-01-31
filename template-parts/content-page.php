@@ -18,7 +18,7 @@
 			<?php the_content();?>
 
 			<?php wp_link_pages( array(
-				'before' => '<div class="page-links level">' . esc_html__( 'Pages:', 'bulmapress' ),
+				'before' => '<div class="page-links level">' . esc_html__( 'Pages:', 'bluegreen' ),
 				'after'  => '</div>',
 				) ); ?>
 
@@ -30,7 +30,7 @@
 					edit_post_link(
 						sprintf(
 							/* translators: %s: Name of current post */
-							esc_html__( 'Edit %s', 'bulmapress' ),
+							esc_html__( 'Edit %s', 'bluegreen' ),
 							the_title( '<span class="screen-reader-text">"', '"</span>', false )
 							),
 						'<span class="edit-link">',

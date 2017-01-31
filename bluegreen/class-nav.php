@@ -37,7 +37,7 @@ class Nav {
 				'depth'             => 2,
 				'container'         => 'div id="navigation"',
 				'menu_class'        => 'nav-right nav-menu',
-				'fallback_cb'       => 'bulmapress_navwalker::fallback',
+				'fallback_cb'       => 'Bluegreen\\Navwalker::fallback',
 				'walker'            => new Navwalker(),
 			)
 		);
