@@ -1,19 +1,16 @@
-# Bulmapress
-###A WordPress flexbox theme
+# Bluegreen
+### A WordPress flexbox theme
 
 
-Hi. I'm a WordPress flexbox theme called Bulmapress.
+A starter theme, based on a theme that's based on a starter theme. ¯\\_(ツ)_/¯
 
-- Based on [Underscores](http://underscores.me/)
+- Based on [Underscores](http://underscores.me/) & [Bulmapress](http://bulmapress.com) 
 - [Bulma](http://bulma.io) integration
-- Requires at least: [WordPress](http://wordpress.org) 4.0
-- Tested up to: [WordPress 4.7](https://wordpress.org/download/)
+- Requires at least: [WordPress](http://wordpress.org) 4.7
+- Requires PHP 5.6
+- Tested up to: [WordPress 4.7.2](https://wordpress.org/download/)
 - Stable tag: 0.0.1
 - License: [GNU General Public License v2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
-
-## Demo
-
-[demo.bulmapress.com](http://demo.bulmapress.com/)
 
 ## Installation
 
@@ -25,14 +22,18 @@ Hi. I'm a WordPress flexbox theme called Bulmapress.
 
 *Does this theme support any plugins?*
 
-Bulmapress includes support for Infinite Scroll in Jetpack.
+Jetpack support can be enabled via the main theme class. 
 
-##Changelog
+## Changelog
 
-*v0.0.1 - Jan 04 2017* : **Initial draft**
+#### 0.0.1 
+*1/30/17*
 
-##Credits
+- Initial fork
 
+## Credits
+
+* Based on Bulmapress http://bulmapress.com, (C) 2016 Scops, https://github.com/teamscops/bulmapress
 * Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * bulma.io http://bulma.io/, (C) 2017 Jeremy Thomas, [MIT](http://opensource.org/licenses/MIT)
 * wp-bootstrap-navwalker, (C) 2014 Edward McIntyre - @twittem, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
