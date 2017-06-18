@@ -23,7 +23,7 @@
 			</header><!-- .page-header -->
 			<div class="archives wrapper">
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'template-parts/content', 'post' ); ?>
+					<?php get_template_part( 'template-parts/content', 'archive' ); ?>
 				<?php endwhile; ?>
 			</div>
 			

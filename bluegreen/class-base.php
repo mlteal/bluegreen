@@ -32,6 +32,7 @@ class Base {
 		new Scripts();
 		new Widgets();
 		new Search();
+		new Gallery();
 	}
 
 	/**

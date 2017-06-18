@@ -17,7 +17,7 @@
 		<div class="hero-body has-text-centered">
 			<div class="site-info">
 				<p class="copyright-link">
-					&copy; 2014 - <?php echo date( 'Y' ); ?> <a href="https://github.com/mlteal">mlteal</a>
+					&copy; <?php echo date( 'Y' ); ?>
 				</p>
 			</div><!-- .site-info -->
 		</div>

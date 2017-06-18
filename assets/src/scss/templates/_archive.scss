@@ -1,0 +1,17 @@
+body.archive {
+	&.category {
+		.post {
+			margin-bottom: 10px;
+			padding: 8px 14px;
+
+			.column {
+				position: relative;
+			}
+			.featured-image {
+				background-repeat: no-repeat;
+				background-size: cover;
+				min-height: 250px;
+			}
+		}
+	}
+}

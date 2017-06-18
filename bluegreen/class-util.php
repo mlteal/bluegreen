@@ -126,16 +126,6 @@ class Util {
 	}
 
 	/**
-	 * Echos the site home link
-	 *
-	 * @param $class
-	 */
-	static function home_link( $class ) {
-		$output = '';
-		echo $output;
-	}
-
-	/**
 	 * Prints a formatted title, for use within the loop
 	 *
 	 * @param string $class

@@ -6,3 +6,21 @@
     padding-right: 0;
   }
 }
+
+.site-content {
+	.column {
+		article {
+			height: 100%;
+			.hero-body {
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+		}
+	}
+}
+
+body.single {
+	.entry-content {
+		font-size: 1.3rem;
+	}
+}
