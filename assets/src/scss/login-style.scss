@@ -1,0 +1,29 @@
+/*! Bluegreen v0.0.1 | GNU General Public License v2 or later */
+
+// Override variables here
+@import "config";
+
+// Import Bulma Base
+@import "../bulma/bulma";
+
+// Import for Bluegreen
+@import "settings/all";
+@import "elements/all";
+
+body.login {
+	background: $grey-lighter;
+}
+
+#login {
+	h1 {
+		display: none;
+	}
+
+	#loginform {
+		@extend .box;
+		border: 1px solid $primary;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}

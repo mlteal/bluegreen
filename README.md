@@ -2,7 +2,7 @@
 ### A WordPress flexbox theme
 
 
-A starter theme, based on a theme that's based on a starter theme. ¯\\_(ツ)_/¯
+A starter theme, based on a theme that's based on a starter theme. ¯\_(ツ)_/¯
 
 - Based on [Underscores](http://underscores.me/) & [Bulmapress](http://bulmapress.com) 
 - [Bulma](http://bulma.io) integration
@@ -18,16 +18,25 @@ A starter theme, based on a theme that's based on a starter theme. ¯\\_(ツ)_/�
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-## Frequently Asked Questions
+## To compile scripts
 
-*Does this theme support any plugins?*
-
-Jetpack support can be enabled via the main theme class. 
+From the theme's root, run `npm install` in CLI, then `gulp`.
 
 ## Changelog
 
+#### 0.1.1 
+*7/4/2018*
+
+- Add login screen styles
+- Readme improvements with info on how to compile the stylesheets
+
+#### 0.1.0 
+*7/18/2017*
+
+- Some base theme enhancements, mostly style adjustments and an archive template tweak
+
 #### 0.0.1 
-*1/30/17*
+*1/30/2017*
 
 - Initial fork
 

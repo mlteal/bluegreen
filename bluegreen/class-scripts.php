@@ -17,6 +17,7 @@ class Scripts {
 	 */
 	function __construct() {
 		add_action( 'wp_enqueue_scripts', array( get_called_class(), 'enqueue_scripts' ) );
+		add_action( 'login_enqueue_scripts', array( get_called_class(), 'login_enqueue_scripts' ) );
 	}
 
 	/**
@@ -60,5 +61,15 @@ class Scripts {
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
+	}
+
+	static function login_enqueue_scripts() {
+		wp_register_style(
+			'bluegreen-login-style',
+			get_template_directory_uri() . '/assets/css/login-style.min.css',
+			array(),
+			VERSION
+		);
+		wp_enqueue_style( 'bluegreen-login-style' );
 	}
 }
