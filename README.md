@@ -24,6 +24,11 @@ From the theme's root, run `npm install` in CLI, then `gulp`.
 
 ## Changelog
 
+#### 0.1.12
+*7/30/2018*
+
+- Pull Bulma in via main package.json, update Bulma version and stylesheets to match
+
 #### 0.1.1 
 *7/4/2018*
 

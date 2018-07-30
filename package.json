@@ -25,6 +25,7 @@
     "gulp-uglify": "^1.5.2"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
     "node-sass": "^4.9.0"
   }
 }
