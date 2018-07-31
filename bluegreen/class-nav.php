@@ -36,7 +36,7 @@ class Nav {
 				'theme_location'    => 'menu-1',
 				'depth'             => 2,
 				'container'         => 'div id="navigation"',
-				'menu_class'        => 'nav-right nav-menu',
+				'menu_class'        => 'navbar-menu nav-menu',
 				'fallback_cb'       => 'Bluegreen\\Navwalker::fallback',
 				'walker'            => new Navwalker(),
 			)

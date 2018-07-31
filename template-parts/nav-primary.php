@@ -1,8 +1,8 @@
 <header id="header" class="hero">
 	<div class="hero-head">
 		<div class="container">
-			<nav id="site-navigation" class="nav main-navigation" role="navigation">
-				<div class="nav-left">
+			<nav id="site-navigation" class="navbar main-navigation" role="navigation">
+				<div class="navbar-brand">
 						<span class="site-title">
 							<a href="<?php echo home_url( '/' ); ?>" class="nav-item is-brand" rel="home">
 								<?php echo get_bloginfo( 'name' ); ?>
